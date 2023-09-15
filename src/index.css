@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    background: rgba(104, 104, 104, 0.34);
+    width: 12px;
+}
+
+::-webkit-scrollbar:hover {
+    background: rgba(0, 128, 128, 0.183);
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: rgba(67, 67, 67, 0.608);
+    border-radius: 100px;
+    transition: all 0.5s;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 207, 207, 0.981);
+    transition: all 0.5s;
+
+
+}

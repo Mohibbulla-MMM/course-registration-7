@@ -2,7 +2,9 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Card from "../Card/Card";
 import CardSideBar from "../CardSideBar/CardSideBar";
-import swal from "sweetalert";
+// import swal from "sweetalert";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Cards = () => {
   const [cards, setCards] = useState([]);
@@ -33,14 +35,24 @@ const Cards = () => {
       });
 
       if (reaminingHours < 0) {
-        swal({
-          title: ` You cannot buy this course`,
-          text: `Credit for this course ${
-            data.duration.hours
-          } \n Your current credit ${reaminingHours + data.duration.hours}`,
-          icon: "warning",
-          button: "cancel",
-        });
+        // swal({
+        //   title: ` You cannot buy this course`,
+        //   text: `Credit for this course ${
+        //     data.duration.hours
+        //   } \n Your current credit ${reaminingHours + data.duration.hours}`,
+        //   icon: "warning",
+        //   button: "cancel",
+        // });
+        // let alertTitle = {<p> text large </p>}
+        toast.error(
+          `Your credit is vary low  
+          \nCredit for this course ${data.duration.hours}
+          \nYour remaining credit ${reaminingHours + data.duration.hours} `,
+          {
+            position: "top-center",
+            autoClose: 8000,
+          }
+        );
         return;
       } else {
         setTotlaPrice(coursePtice);
@@ -48,12 +60,23 @@ const Cards = () => {
         setBookMarkTitle(newBookMark);
       }
     } else {
-      swal({
-        title: `${data.title}`,
-        text: "Already selected!",
-        icon: "warning",
-        button: "cancel",
-      });
+      // swal({
+      //   title: `${data.title}`,
+      //   text: "Already selected!",
+      //   icon: "warning",
+      //   button: "cancel",
+      // });
+      toast.warn(
+        `
+        You already selected this course--------------
+        ${data.title}. 
+        `,
+        {
+          position: "top-center",
+          autoClose: 4000,
+          hideProgressBar: true,
+        }
+      );
     }
   };
   // console.log(bookMark);
@@ -78,6 +101,7 @@ const Cards = () => {
           ></CardSideBar>
         </div>
       </div>
+      <ToastContainer className="text-xl  "></ToastContainer>
     </div>
   );
 };

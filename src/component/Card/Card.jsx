@@ -9,7 +9,7 @@ const Card = ({ cards, handlerTitleAddToBookmark }) => {
     <div className="shadow-md border-2 border-gray-100 flex flex-col gap-3 p-4 rounded-md    mb-4 bg-gray-100">
       <figure className="flex justify-center items-center overflow-hidden">
         <img
-          className="inline-block rounded-md w-full  h-[170px] object-cover overflow-hidden"
+          className="inline-block rounded-md w-full  h-[150px] object-cover overflow-hidden"
           src={banner}
           alt=""
         />
@@ -17,7 +17,7 @@ const Card = ({ cards, handlerTitleAddToBookmark }) => {
       {/* optional autor detaila */}
       <div className="flex gap-3 items-center">
         <figure>
-          <img className="w-14 h-14 object-cover rounded-full" src={avatar} alt="" />
+          <img className="w-10 h-10 object-cover rounded-full" src={avatar} alt="" />
         </figure>
         <h3 title="Owner" className="text-teal-600  font-semibold">{owner}</h3>
       </div>

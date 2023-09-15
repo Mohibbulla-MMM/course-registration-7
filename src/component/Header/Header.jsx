@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header>
-      <div className="flex sm:flex-row  flex-col gap-4 justify-between items-center py-4 shadow-md  px-3 mb-5">
+      <div id="topBar" className="flex sm:flex-row  flex-col gap-4 justify-between items-center py-4 shadow-md  px-3 mb-5">
         <h1 className=" md:text-3xl text-2xl font-semibold  ">
           Course Registration
         </h1>
