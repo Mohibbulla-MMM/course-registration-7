@@ -1,10 +1,10 @@
 import { BiDollar } from "react-icons/bi";
 import { BsBook } from "react-icons/bs";
 
-const Card = ({ cards }) => {
+const Card = ({ cards, handlerTitleAddToBookmark }) => {
   const { banner, title, description, price, duration } = cards;
   // console.log(cards);
-  console.log(duration);
+  // console.log(duration);
   return (
     <div className="shadow-md border-2 border-gray-100 flex flex-col gap-3 p-4 rounded-md    mb-4 bg-gray-100">
       <figure className="flex justify-center items-center overflow-hidden">
@@ -39,8 +39,12 @@ const Card = ({ cards }) => {
         </div>
       </div>
       {/* button */}
-      <button className="btn btn-accent text-lg mt-4">Select</button>
-
+      <button
+        onClick={() => handlerTitleAddToBookmark(cards)}
+        className="btn btn-accent text-lg mt-4"
+      >
+        Select
+      </button>
     </div>
   );
 };
