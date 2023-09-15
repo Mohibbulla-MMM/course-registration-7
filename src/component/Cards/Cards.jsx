@@ -8,8 +8,9 @@ const Cards = () => {
   const [cards, setCards] = useState([]);
   const [bookMarkTitle, setBookMarkTitle] = useState([]);
   const [reminingHour, setReminingHour] = useState(20);
+  const [totlaPrice, setTotlaPrice] = useState(0);
   useEffect(() => {
-    fetch("../../../public/data.json")
+    fetch("./data.json")
       .then((res) => res.json())
       .then((data) => setCards(data));
   }, []);
@@ -18,12 +19,19 @@ const Cards = () => {
     const newBookMark = [...bookMarkTitle, data];
     const itemChecker = bookMarkTitle.find((item) => item.id == data.id);
     if (!itemChecker) {
+      // remining credit ===========
       let totlaHours = data.duration.hours;
       bookMarkTitle.forEach((element) => {
         totlaHours += element.duration.hours;
       });
       let reaminingHours = 20 - totlaHours;
-      // console.log(totlaHours);
+
+      // course totla price ======================
+      let coursePtice = data.price;
+      bookMarkTitle.forEach((element) => {
+        coursePtice += element.price;
+      });
+
       if (reaminingHours < 0) {
         swal({
           title: ` You cannot buy this course`,
@@ -35,6 +43,7 @@ const Cards = () => {
         });
         return;
       } else {
+        setTotlaPrice(coursePtice);
         setReminingHour(reaminingHours);
         setBookMarkTitle(newBookMark);
       }
@@ -65,6 +74,7 @@ const Cards = () => {
           <CardSideBar
             bookMarkTitle={bookMarkTitle}
             reminingHour={reminingHour}
+            totlaPrice={totlaPrice}
           ></CardSideBar>
         </div>
       </div>

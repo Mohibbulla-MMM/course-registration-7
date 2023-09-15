@@ -2,7 +2,7 @@ import { BiDollar } from "react-icons/bi";
 import { BsBook } from "react-icons/bs";
 
 const Card = ({ cards, handlerTitleAddToBookmark }) => {
-  const { banner, title, description, price, duration } = cards;
+  const { banner, title, description, price, duration, avatar, owner } = cards;
   // console.log(cards);
   // console.log(duration);
   return (
@@ -14,13 +14,22 @@ const Card = ({ cards, handlerTitleAddToBookmark }) => {
           alt=""
         />
       </figure>
+      {/* optional autor detaila */}
+      <div className="flex gap-3 items-center">
+        <figure>
+          <img className="w-14 h-14 object-cover rounded-full" src={avatar} alt="" />
+        </figure>
+        <h3 title="Owner" className="text-teal-600  font-semibold">{owner}</h3>
+      </div>
       <h1
         title={title}
         className="text-2xl font-semibold whitespace-nowrap overflow-ellipsis overflow-hidden"
       >
         {title}
       </h1>
-      <p className="text-gray-500">{description.slice(0, 50)}...</p>
+      <p title={description} className="text-gray-500">
+        {description.slice(0, 50)}...
+      </p>
       <div className="flex flex-wrap gap-1 justify-between font-semibold ">
         {/* ----- creadit and  price section ---- */}
         <div className="flex items-center">
