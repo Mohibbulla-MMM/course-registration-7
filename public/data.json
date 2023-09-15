@@ -1,0 +1,171 @@
+ [
+        {
+            "banner": "https://ibb.co/R4NSV1V",
+            "title": "Advanced JavaScript",
+            "avatar": "https://i.ibb.co/kJVknX9/5.png",
+            "owner": "Emma Coder",
+            "description": "Dive deep into JavaScript, including ES6 features and advanced techniques.",
+            "price": 5999,
+            "duration": {
+                "hours": 3,
+                "minutes": 0
+            },
+            "number": "CS201",
+            "credit": 3
+        },
+        {
+            "banner": "https://i.ibb.co/cQLYsrP/Rectangle-2.png",
+            "title": "Python for Data Science",
+            "avatar": "https://i.ibb.co/kJVknX9/5.png",
+            "owner": "Daniel DataScientist",
+            "description": "Learn Python for data analysis, visualization, and machine learning.",
+            "price": 7999,
+            "duration": {
+                "hours": 4,
+                "minutes": 0
+            },
+            "number": "CS202",
+            "credit": 4
+        },
+        {
+            "banner": "https://i.ibb.co/FqGtqxN/download.png",
+            "title": "Full-Stack Web Development",
+            "avatar": "https://i.ibb.co/kJVknX9/5.png",
+            "owner": "Sophia FullStack",
+            "description": "Become a full-stack web developer with expertise in both front-end and back-end technologies.",
+            "price":9999,
+            "duration": {
+                "hours": 5,
+                "minutes": 0
+            },
+            "number": "CS203",
+            "credit": 5
+        },
+        {
+            "banner": "https://i.ibb.co/VMw5P9T/Java-19-comes-with-an-open-source-twist-All-you-need-to-know.jpg",
+            "title": "Java for Android App Development",
+            "avatar": "https://i.ibb.co/x5thkQ6/girl1.jpg",
+            "owner": "Liam AndroidDev",
+            "description": "Learn Java for building Android applications and publish them on the Play Store.",
+            "price": 6999,
+            "duration": {
+                "hours": 15,
+                "minutes": 0
+            },
+            "number": "CS204",
+            "credit": 3
+        },
+        {
+            "banner": "https://i.ibb.co/F6nHJZp/Rectangle-2-3.png",
+            "title": "Data Science and Machine Learning",
+            "avatar": "https://i.ibb.co/x5thkQ6/girl1.jpg",
+            "owner": "Ava DataExpert",
+            "description": "Explore data science and machine learning concepts and algorithms for real-world applications.",
+            "price": 8999,
+            "duration": {
+                "hours": 5,
+                "minutes": 0
+            },
+            "number": "CS205",
+            "credit": 4
+        },
+        {
+            "banner": "https://i.ibb.co/qrczty2/Rectangle-2-4.png",
+            "title": "C++ Programming",
+            "avatar": "https://i.ibb.co/x5thkQ6/girl1.jpg",
+            "owner": "Noah CPlusPlus",
+            "description": "Master the C++ programming language and build high-performance applications.",
+            "price": 7999,
+            "duration": {
+                "hours": 4,
+                "minutes": 0
+            },
+            "number": "CS206",
+            "credit": 4
+        },
+        {
+            "banner": "https://i.ibb.co/PNPP6CW/Rectangle-2-5.png",
+            "title": "Web Security and Ethical Hacking",
+            "avatar": "https://i.ibb.co/3kzPPXg/boy1.png",
+            "owner": "Mia EthicalHacker",
+            "description": "Learn how to secure web applications and gain skills in ethical hacking.",
+            "price": 6999,
+            "duration": {
+                "hours": 12,
+                "minutes": 30
+            },
+            "number": "CS207",
+            "credit": 3
+        },
+        {
+            "banner": "https://i.ibb.co/8KbPBKM/images.jpg",
+            "title": "Artificial Intelligence Fundamentals",
+            "avatar": "https://i.ibb.co/3kzPPXg/boy1.png",
+            "owner": "James AIExpert",
+            "description": "Introduction to artificial intelligence, including machine learning and neural networks.",
+            "price": 5999,
+            "duration": {
+                "hours": 7,
+                "minutes": 45
+            },
+            "number": "CS208",
+            "credit": 3
+        },
+        {
+            "banner": "https://i.ibb.co/LhB8QHB/images.jpg",
+            "title": "React.js Fundamentals",
+            "avatar": "https://i.ibb.co/3kzPPXg/boy1.png",
+            "owner": "Lily ReactDev",
+            "description": "Learn the basics of React.js for building modern web applications.",
+            "price": 4999,
+            "duration": {
+                "hours": 2,
+                "minutes": 0
+            },
+            "number": "CS209",
+            "credit": 2
+        },
+        {
+            "banner": "https://i.ibb.co/8NVXv9P/images.jpg",
+            "title": "Blockchain Technology",
+            "avatar": "https://i.ibb.co/0mZJptP/boy2.jpg",
+            "owner": "William BlockchainPro",
+            "description": "Explore blockchain technology, cryptocurrencies, and smart contracts.",
+            "price": 7999,
+            "duration": {
+                "hours": 3,
+                "minutes": 30
+            },
+            "number": "CS210",
+            "credit": 3
+        },
+        {
+            "banner": "https://i.ibb.co/tBd4J1J/images.jpg",
+            "title": "Cybersecurity and Penetration Testing",
+            "avatar": "https://i.ibb.co/0mZJptP/boy2.jpg",
+            "owner": "Nora CyberSecPro",
+            "description": "Gain expertise in cybersecurity and penetration testing techniques.",
+            "price": 8999,
+            "duration": {
+                "hours": 4,
+                "minutes": 45
+            },
+            "number": "CS211",
+            "credit": 4
+        },
+        {
+            "banner": "https://i.ibb.co/dkcZPpf/Rectangle-2-1.png",
+            "title": "Databases and SQL Mastery",
+            "avatar": "https://i.ibb.co/0mZJptP/boy2.jpg",
+            "owner": "Oliver DBExpert",
+            "description": "Master database management and SQL for efficient data storage and retrieval.",
+            "price": 6999,
+            "duration": {
+                "hours": 10,
+                "minutes": 15
+            },
+            "number": "CS212",
+            "credit": 3
+        }
+    ]
+
